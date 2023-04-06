@@ -1,5 +1,6 @@
 <script>
-    import logo from '../assets/LogoJap&.png'
+    import {link} from 'svelte-spa-router';
+    import logo from '../assets/LogoJapnco.png';
     const nav_links = [
 
        { text: "Accueil", url: "/", label: "" },
@@ -16,7 +17,7 @@
 
 <nav aria-label="menu principal">
     
-    <a href="/" title="Jap&CO" aria-label="accueil du site">
+    <a use:link href="/" title="Jap&CO" aria-label="accueil du site">
         <img src="{logo}" alt="Logo"> 
     </a>
 
@@ -26,7 +27,7 @@
         <!-- Utilisation d'une boucle pour créer la navigation dynamiquement -->
         {#each nav_links as nav}
             <li role="none">
-                <a href="{nav.url}" role="menuitem" aria-label="{nav.label}">{nav.text}</a>
+                <a use:link href="{nav.url}" role="menuitem" aria-label="{nav.label}">{nav.text}</a>
             </li>
         {/each}
     </ul>
@@ -40,5 +41,8 @@
         <input type="submit" value="Rechercher">
       </form>
 </nav>
+<style>
+   
+</style>
 
 
