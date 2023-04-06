@@ -1,17 +1,13 @@
 <script>
     import logo from '../assets/LogoJap&.png'
     const nav_links = [
-
-       { text: "Accueil", url: "/", label: "" },
-       { text: "Articles", url: "/articles", label: "" },
        { text: "À propos", url: "/a-propos", label: "" },
        { text: "Connexion", url: "/a-propos", label: "" },
        { text: "Contact", url: "/contact", label: "" },
 ];
 
-
-
 </script>
+
 
 
 <nav aria-label="menu principal">
@@ -35,6 +31,8 @@
     <button type="button" id="toggle-menu" aria-controls="menu" aria-haspopup="true">
         <i id="menubutton" class="fa-solid fa-bars"></i>
     </button>
+    <!-- <form action="/search" method="GET">
+        <input type="text" name="q" placeholder="Rechercher...">
+        <input type="submit" value="Rechercher">
+      </form> -->
 </nav>
-
-
