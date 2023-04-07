@@ -1,4 +1,4 @@
-# Projet - Jap&Co 🇯🇵
+# Projet - Jap&Co
 ![LogoJap&Co](../src/assets/LogoJapnco.png)
 
 ***
