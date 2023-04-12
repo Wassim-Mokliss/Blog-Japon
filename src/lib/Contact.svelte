@@ -22,10 +22,10 @@ function handleOnSubmit(event){
 }
 </script>
 
-<form class="contact" on:submit={handleOnSubmit}>
+<form on:submit={handleOnSubmit}>
 
-    <h1>Création de votre compte</h1>
-    <h4>Déjà inscrit ? <a href="route page connexion">Se connecter</a> </h4>
+    <h1>Formulaire de Contact</h1>
+    
 
     <div class="field">
         <label for="name">NOM</label>
@@ -45,8 +45,9 @@ function handleOnSubmit(event){
     </div>
     
     <div class="field">
-        <input type="submit" class="send" value="Envoyer">
+        <input type="submit" class="send" value="Me connecter">
     </div>
     </form>
 
     <style></style>
+
