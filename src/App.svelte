@@ -5,6 +5,7 @@
       import Contact from "./lib/Contact.svelte";
       import Header from "./composants/Header.svelte";
       import Footer from "./composants/Footer.svelte";
+      import Register from "./lib/Register.svelte";
       
 
 
@@ -12,6 +13,7 @@
       '/': Home,
       '/articles': Articles,
       '/contact' : Contact,
+      '/inscription' : Register
       }
 </script>
 

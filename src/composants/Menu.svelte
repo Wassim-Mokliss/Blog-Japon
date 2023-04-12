@@ -7,6 +7,7 @@
        { text: "Articles", url: "/articles", label: "" },
        { text: "À propos", url: "/a-propos", label: "" },
        { text: "Connexion", url: "/a-propos", label: "" },
+       { text: "S'inscrire", url: "/inscription", label: "" },
        { text: "Contact", url: "/contact", label: "" },
 ];
 
