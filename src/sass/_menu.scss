@@ -1,0 +1,98 @@
+// Variables de couleurs
+$black: #000;
+$white: #fff;
+$red: #ff0000;
+$sakura: #ffb6c1;
+
+// Styles pour la navigation
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black;
+  padding: 20px;
+  
+  a img {
+    height: 60px;
+  }
+  
+  h1 {
+    margin: 0;
+    color: $white;
+    font-size: 32px;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      margin-right: 20px;
+      
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          color: $sakura;
+          animation: pulse 1s;
+        }
+      }
+    }
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 32px;
+    color: $white;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: $sakura;
+      animation: tada 1s;
+    }
+  }
+}
+
+// Animations
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+// @keyframes pulse {
+//   0% {
+//     transform: scale(1);
+//   }
+//   50% {
+//     transform: scale(1.2);
+//   }
+//   100% {
+//     transform: scale(1);
+//   }
+// }
+
+// @keyframes tada {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   25% {
+//     transform: rotate(10deg);
+//   }
+//   50% {
+//     transform: rotate(-10deg);
+//   }
+//   75% {
+//     transform: rotate(10deg);
+//   }
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }
+
+
+
+
