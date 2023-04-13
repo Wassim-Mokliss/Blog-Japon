@@ -1,7 +1,6 @@
 <script>
   
   import Actuality from "../composants/Actuality.svelte";
-  //import Banner from "../composants/Banner.svelte";
 </script>
 
 
