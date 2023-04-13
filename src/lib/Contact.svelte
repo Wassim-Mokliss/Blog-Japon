@@ -22,9 +22,11 @@ function handleOnSubmit(event){
 }
 </script>
 
-<form on:submit={handleOnSubmit}>
-
+<section id="contact">
     <h1>Formulaire de Contact</h1>
+<form class="contact" on:submit={handleOnSubmit}>
+
+    
     
 
     <div class="field">
@@ -45,9 +47,10 @@ function handleOnSubmit(event){
     </div>
     
     <div class="field">
-        <input type="submit" class="send" value="Me connecter">
+       
+        <button class="send">Envoyer</button>
     </div>
     </form>
-
+</section>
     <style></style>
 
