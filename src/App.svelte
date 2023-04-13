@@ -18,7 +18,7 @@
       '/articles': Articles,
 
       '/contact' : Contact,
-      '/connexion' : Logister
+      '/connexion' : Logister,
 
       '/login': Connexion,
       '/a-propos' : A_propos,

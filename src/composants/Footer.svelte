@@ -14,7 +14,7 @@
             <!-- Utilisation d'une boucle pour créer la navigation dynamiquement -->
             {#each nav_links as nav}
                 <li role="none">
-                    <a use:link href="{nav.url}" role="menuitem" aria-label="{nav.label}">{nav.text}</a>
+                    <a class="liens_footer" use:link href="{nav.url}" role="menuitem" aria-label="{nav.label}">{nav.text}</a>
                 </li>
             {/each}
         </ul>
@@ -44,27 +44,29 @@
         text-decoration: underline;
         display: flex;
 
-        li {
-        margin-right: 20px;
-      
-        a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        transition: all 0.3s ease;
+            li {
+            //margin-right: 40px;
         
-        &:hover {
-          color: #ffb6c1;
-          animation: pulse 1s;
+                a {
+                color: white;
+                text-decoration: none;
+                font-size: 28px;
+                transition: all 0.3s ease;
+                margin: 0 15px;
+                
+                &:hover {
+                color: #ffb6c1;
+                animation: pulse 1s;
+                }
+            }
         }
-      }
-    }
     }
 
     .copyright {
         margin-top: 8px;
-        font-size: 12px;
+        font-size: 15px;
     }
+
 
 </style>
 
