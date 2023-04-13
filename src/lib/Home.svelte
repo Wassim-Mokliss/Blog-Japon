@@ -1,7 +1,7 @@
 <script>
   
   import Actuality from "../composants/Actuality.svelte";
-  
+
 </script>
 
 
@@ -14,7 +14,7 @@
     img { 
    height: 500px;
    background-size: contain;
-   width: 100%;
+   width:100%;
     } 
 </style>
 
