@@ -35,9 +35,7 @@
     font-size: 16px;
     line-height: 1.5;
     padding-bottom: 40px;
-    
-  
-}
+    }
 
 .Title_container {
 font-weight: bold;

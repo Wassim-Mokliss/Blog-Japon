@@ -1,6 +1,7 @@
 <script>
   
   import Actuality from "../composants/Actuality.svelte";
+
 </script>
 
 
@@ -16,5 +17,5 @@
    width:100%;
     } 
 </style>
-<!-- <Banner/> -->
+
 <Actuality/>
