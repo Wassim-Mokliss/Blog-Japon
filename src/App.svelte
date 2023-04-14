@@ -17,7 +17,7 @@
       '/contact' : Contact,
       '/login': Connexion,
       '/a-propos' : A_propos,
-      '*': Erreur,
+      '*': Erreur
       }
 </script>
 
