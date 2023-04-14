@@ -87,32 +87,30 @@ import { push } from "svelte-spa-router";
 
 </script>
 
+<div class="logister">
 
-<h1>Connexion</h1>
+    <div class="allform">   
 
+        <form on:submit={handleSubmitForm} action="" method="post">
 
+            <h2 class="titleregister1">Connexion</h2>
+                
+                <div class="infos">
+                    <label for="email">Email :</label>
+                    <input class="input_logister_bis" type="email" id="email" placeholder="john@doe.com" bind:value={email}>
+                </div>
 
-<form on:submit={handleSubmitForm} id="connexion-form" action="" method="post">
-    <label for="email">Nom d'utilisateur :</label>
-    <input type="email" id="email" bind:value={email}>
+                <div class="infos">          
+                    <label for="password">Mot de passe :</label>
+                    <input class="input_logister_bis" type="password" id="password" placeholder="**********" bind:value={password}>
+                </div>
+            
+                <div class="divsubmitbtn">
+                    <button class="btnsubmit" type="submit">Se connecter</button>
+                </div>
 
-    <label for="password">Mot de passe :</label>
-    <input type="password" id="password" bind:value={password}>
+        </form>
 
-    <button type="submit">Se connecter</button>
-  </form>
+    </div>
 
-  <style>
-
-    form{
-        align-items: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-
-
-
-  </style>
+</div>
