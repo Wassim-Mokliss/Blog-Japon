@@ -5,7 +5,7 @@
 
       import Contact from "./lib/Contact.svelte";
 
-      import Contact from "./lib/Contact.svelte";
+      
       import Header from "./composants/Header.svelte";
       import Footer from "./composants/Footer.svelte";
       import Logister from "./lib/Logister.svelte";
@@ -22,21 +22,11 @@
       const routes = {
       '/': Home,
       '/articles': Articles,
-
-      '/contact' : Contact,
       '/connexion' : Logister,
-
-
       '/contact' : Contact,
-      '/connexion' : Logister,
-
       '/login': Connexion,
       '/a-propos' : A_propos,
-
       '*': Erreur,
-
-
-
       }
 </script>
 
