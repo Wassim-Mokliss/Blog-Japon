@@ -3,7 +3,7 @@
 </script>
 
 <section class="actuality" aria-label="Présentation objectif">
-    <h1 class="Title_container">
+    <h1 class="Title">
         Actualités
     </h1>
     <div class="container">
@@ -12,15 +12,15 @@
             Nous sommes plusieurs passionnés du pays du Soleil-Levant, de sa gastronomie, de sa mode,
             de son art traditionnel et de sa technologie innovante. Nous avons créé ce blog pour partager
             nos connaissances et nos expériences avec d'autres passionnés du Japon à travers le monde.
-        </p>
-        <p id="second_P">
+            <br>
+            <br>
             Notre objectif est de fournir des informations approfondies sur la culture japonaise,
             ainsi que de donner un aperçu de la vie quotidienne au Japon.
             Nous espérons que vous apprécierez notre perspective unique sur ce pays incroyable
             et que vous trouverez notre contenu éducatif, intéressant et divertissant.
         </p>
     </div>
-    <h2 class="Title_articles">Nos dernières publications</h2>
+    <h2 class="Title">Nos dernières publications</h2>
     <div class="Derniers-articles"></div>
 </section>
 
@@ -32,31 +32,23 @@
 .container {
     text-align: center;
     width: auto;
-    font-size: 16px;
+    font-size: 40px;
     line-height: 1.5;
-    padding-bottom: 40px;
-    }
+}
 
-.Title_container {
-font-weight: bold;
-text-align: center;
+.Title {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    margin-top: 80px;
 
 }
 
-#first_P {
-margin-bottom: 50px;
+.actuality {
+    font-size: 50px;
+    margin: 0 10%;
 }
-
-.Title_articles {
-
-justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 30px;
-}
-
-
 
 
 
