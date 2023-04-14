@@ -115,7 +115,7 @@
 
             <div class="infos">
                 <label for="email">Email :</label>
-                <input required type="email" name="email" id="email" placeholder="johndoe@email.com" bind:value={email}/>
+                <input class="input_logister" required type="email" name="email" id="email" placeholder="johndoe@email.com" bind:value={email}/>
                 {#if error_boolean}
                     <h1>Erreur</h1>
                 {/if}
@@ -123,7 +123,7 @@
 
             <div class="infos">
                 <label for="password">Mot de passe :</label>
-                <input required type="password" name="password" id="password" placeholder="**********" bind:value={password}/>
+                <input class="input_logister" required type="password" name="password" id="password" placeholder="**********" bind:value={password}/>
             </div>
 
             <div class="divsubmitbtn1">
@@ -144,17 +144,17 @@
 
             <div class="infos">
                 <label for="lastname">Nom :</label>
-                <input required type="lastname" name="lastname" id="lastname" placeholder="Doe" bind:value={last_name}/>
+                <input class="input_logister" required type="lastname" name="lastname" id="lastname" placeholder="Doe" bind:value={last_name}/>
             </div>
 
             <div class="infos">
                 <label for="firstname">Prénom :</label>
-                <input required type="firstname" name="firstname" id="firstname" placeholder="John" bind:value={first_name}/>
+                <input class="input_logister" required type="firstname" name="firstname" id="firstname" placeholder="John" bind:value={first_name}/>
             </div>
 
             <div class="infos">
                 <label for="email">Email :</label>
-                <input required type="email" name="email" id="email" placeholder="johndoe@email.com" bind:value={email}/>
+                <input class="input_logister" required type="email" name="email" id="email" placeholder="johndoe@email.com" bind:value={email}/>
                 {#if error_boolean}
                     <h1>Erreur</h1>
                 {/if}
@@ -162,7 +162,7 @@
 
             <div class="infos">
                 <label for="password">Mot de passe :</label>
-                <input required type="password" name="password" id="password" placeholder="**********" bind:value={password}/>
+                <input class="input_logister" required type="password" name="password" id="password" placeholder="**********" bind:value={password}/>
             </div>
 
             <div class="divsubmitbtn2">

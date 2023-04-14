@@ -29,24 +29,24 @@ function handleOnSubmit(event){
     
     
 
-    <div class="field">
+    <div class="field_infos">
         <label for="name">NOM</label>
-            <input type="text" id="name" placeholder="Linda" bind:value={name}>
+            <input class="input_infos" type="text" id="name" placeholder="Linda" bind:value={name}>
     </div>
-    <div class="field">
+    <div class="field_infos">
         <label for = "lastname">PRENOM</label>
-            <input type="text" id="lastname" placeholder="Wal" bind:value={lastname} >
+            <input class="input_infos" type="text" id="lastname" placeholder="Wal" bind:value={lastname} >
     </div>
-    <div class="field">
+    <div class="field_infos">
         <label for="email">EMAIL</label>
-            <input type="email" id="email" placeholder="linda@boite.com" bind:value={email}>
+            <input class="input_infos" type="email" id="email" placeholder="linda@boite.com" bind:value={email}>
     </div>
-    <div class="field" >
+    <div class="field_infos" >
         <label for="message">MESSAGE </label>
-            <input type="message" id="message" placeholder="****" bind:value={message}>
+            <input class="input_infos" type="message" id="message" placeholder="****" bind:value={message}>
     </div>
     
-    <div class="field">
+    <div class="field_infos">
        
         <button class="send">Envoyer</button>
     </div>
