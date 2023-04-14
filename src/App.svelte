@@ -4,6 +4,8 @@
       import Articles from "./lib/Articles.svelte";
 
       import Contact from "./lib/Contact.svelte";
+
+      import Contact from "./lib/Contact.svelte";
       import Header from "./composants/Header.svelte";
       import Footer from "./composants/Footer.svelte";
       import Logister from "./lib/Logister.svelte";
@@ -11,7 +13,11 @@
       import Connexion from "./lib/Connexion.svelte"
       import A_propos from "./lib/A_propos.svelte"
 
+      import Erreur from "./composants/Erreur.svelte";
+
+
       
+
 
       const routes = {
       '/': Home,
@@ -20,8 +26,16 @@
       '/contact' : Contact,
       '/connexion' : Logister,
 
+
+      '/contact' : Contact,
+      '/connexion' : Logister,
+
       '/login': Connexion,
       '/a-propos' : A_propos,
+
+      '*': Erreur,
+
+
 
       }
 </script>
