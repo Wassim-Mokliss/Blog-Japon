@@ -11,7 +11,11 @@
       import Connexion from "./lib/Connexion.svelte"
       import A_propos from "./lib/A_propos.svelte"
 
+      import Erreur from "./composants/Erreur.svelte";
+
+
       
+
 
       const routes = {
       '/': Home,
@@ -22,6 +26,10 @@
 
       '/login': Connexion,
       '/a-propos' : A_propos,
+
+      '*': Erreur,
+
+
 
       }
 </script>
