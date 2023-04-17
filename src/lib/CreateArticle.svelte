@@ -3,20 +3,26 @@
     import axios from "axios";
   
     // Déclaration des variables pour stocker les valeurs des champs du formulaire
-    let title = "";
-    let description = "";
-  
-    // Fonction qui sera appelée lors de la soumission du formulaire
-    function submitArticle(event) {
-      // Empêche le rechargement de la page lors de la soumission du formulaire
-      event.preventDefault();
-  
+    let formData = {
+        title: "",
+        label: "",
+        content: "",
+        image: null
+    }
+
+    function submitArticle(event){
+      event.preventDefault ()
+      const token = window.localStorage.getItem('token');
+      const data = JSON.stringify(formData);
+          const options = {
+              headers: {
+                  'Content-Type': 'application/json',
+                  'Authorization': `Bearer ${token}`
+              }
+            }
       // Envoie une requête POST à l'API de Directus avec les données du formulaire
-      axios
-        .post(
-          "http://localhost:8056/items/Article",
-          { title: title, description: description },
-        )
+      axios.post("http://localhost:8056/items/Article", data, options)
+      
         // Traite la réponse en cas de succès
         .then(function (response) {
           console.log("Article créé avec succès", response.data);
@@ -30,13 +36,34 @@
 
 
 <!-- Début du formulaire avec la classe "submitArticle" et la fonction "submitArticle" appelée lors de la soumission du formulaire -->
+
 <form class="submitArticle" on:submit={submitArticle}>
-  <label for="title">Titre:</label>
-  <input type="text" id="title" name="title" bind:value={title} required  />
-  <label for="description">Description:</label>
-  <textarea id="description" name="description" bind:value={description} required ></textarea>
-  <!-- Bouton pour soumettre le formulaire -->
-  <button type="submit">Créer un article</button>
+  
+  <div class="infos_article">
+    <label for="title">Titre:</label>
+    <input type="text" id="title" name="title" bind:value={formData.title}/>
+  </div>
+
+    <div class="infos_article">
+        <label for="label-tag">Label</label>
+        <select name="label-tag" id="label-tag" bind:value={formData.label}>
+          <option value="">Choisir une catégorie...</option>
+          <option value='["Jeux vidéos"]'>Jeux vidéos</option>
+          <option value='["Mangas"]'>Mangas</option>
+          <option value='["Événements"]'>Événements</option>
+        </select>
+    </div>
+
+    <div class="infos_articles">
+        <label for="content">Description:</label>
+        <input id="content" name="content" bind:value={formData.content}/>
+    </div>
+
+    <div class="infos_article_btn">
+        <!-- Bouton pour soumettre le formulaire -->
+        <button type="submit">Créer un article</button>
+    </div>
+
 </form>
   
   <style>
