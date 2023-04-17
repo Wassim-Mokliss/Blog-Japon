@@ -5,12 +5,7 @@
     const nav_links = [
        { text: "Accueil", url: "/", label: ""},
        { text: "Articles", url: "/articles", label: "" },
-
-       { text: "Connexion/Inscription", url: "/connexion", label: "" },
-
-       { text: "À propos", url: "/a-propos", label: "" },
-       { text: "Contact", url: "/contact", label: "" },
-
+       { text: "Connexion/Inscription", url: "/connexion", label: "" }
 ];
 
 
