@@ -17,8 +17,9 @@
 
 {#each articles as article}
 <article>
-    <h2> {article.title}</h2>
-    <p>{article.description}</p>n
+    <h2>{article.title}</h2>
+    <p>{article.label}</p>
+    <p>{article.content}</p>
 </article>
 {/each}
 <style></style>

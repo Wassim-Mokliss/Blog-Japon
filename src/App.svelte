@@ -37,3 +37,10 @@
 </main>
 <Footer/>
 
+<style lang="scss">
+
+  main {
+    flex: 1,
+  }
+
+</style>
