@@ -8,9 +8,6 @@
     //J'importe une fonctionnalité
     import {push} from "svelte-spa-router";
 
-    //J'importe ma page 404 en cas d'erreur
-    import Erreur from "../composants/Erreur.svelte";
-
     //Je defini mes variables d'environnement qui vont transporter les infos du clients
     let last_name=""
     let first_name=""
@@ -107,6 +104,7 @@
                 <div class="infos">
                     <label for="password">Mot de passe :</label>
                     <input class="input_logister" required type="password" name="password" id="password" placeholder="**********" bind:value={password}/>
+                    <a href="/#/connexion">Déjà inscrit ?</a>
                 </div>
 
                 <div class="divsubmitbtn">
@@ -118,3 +116,18 @@
     </div>
 
 </div>
+
+<style lang="scss">
+
+    a {
+      text-decoration: none;
+      color: #0077cc;
+
+        &:hover {
+            text-decoration: underline;
+            color: #004f88;
+        }
+        
+    }
+
+</style>

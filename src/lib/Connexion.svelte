@@ -31,6 +31,11 @@
 //   console.log(email,password)
 
 import { push } from "svelte-spa-router";
+import { link } from "svelte-spa-router";
+
+const nav = [
+       { text: "Pas encore inscrit ?", url: "/inscription", label: "" }
+];
 
     export let reload = false;
 
@@ -79,12 +84,6 @@ import { push } from "svelte-spa-router";
         return token;
     }
 
-  
-
-    
-    
-
-
 </script>
 
 <div class="logister">
@@ -103,6 +102,7 @@ import { push } from "svelte-spa-router";
                 <div class="infos">          
                     <label for="password">Mot de passe :</label>
                     <input class="input_logister_bis" type="password" id="password" placeholder="**********" bind:value={password}>
+                    <a href="/#/inscription">Pas encore inscrit ?</a>
                 </div>
             
                 <div class="divsubmitbtn">
@@ -114,3 +114,18 @@ import { push } from "svelte-spa-router";
     </div>
 
 </div>
+
+<style lang="scss">
+
+    a {
+      text-decoration: none;
+      color: #0077cc;
+
+        &:hover {
+            text-decoration: underline;
+            color: #004f88;
+        }
+        
+    }
+
+</style>
