@@ -2,10 +2,24 @@
     import {link} from 'svelte-spa-router';
     import logo from '../assets/LogoJapnco.png';
 
+    const isLogged = window.localStorage.getItem('token') != null;
+
     const nav_links = [
-       { text: "Accueil", url: "/", label: ""},
-       { text: "Articles", url: "/articles", label: "" },
-       { text: "Connexion/Inscription", url: "/connexion", label: "" }
+        {   
+            text: "Accueil", 
+            url: "/",
+            label: "Page principal"
+        },
+        {   
+            text: "Articles",
+            url: "/articles",
+            label: "Page affichant tout les articles publiés"
+        },
+        {   
+            text: isLogged ? "Se déconnecter" : "Se connecter",
+            url: "/connexion",
+            label: "Page affichant le formulaire de connexion et qui donne la possibilité d'être rediriger vers le formulaire d'inscription si besoin"
+        }
 ];
 
 

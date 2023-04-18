@@ -31,11 +31,6 @@
 //   console.log(email,password)
 
 import { push } from "svelte-spa-router";
-import { link } from "svelte-spa-router";
-
-const nav = [
-       { text: "Pas encore inscrit ?", url: "/inscription", label: "" }
-];
 
     export let reload = false;
 
@@ -92,17 +87,17 @@ const nav = [
 
         <form on:submit={handleSubmitForm} action="" method="post">
 
-            <h2 class="titleregister1">Connexion</h2>
+            <h2 class="title_login">Connexion</h2>
                 
                 <div class="infos">
                     <label for="email">Email :</label>
-                    <input class="input_logister_bis" type="email" id="email" placeholder="john@doe.com" bind:value={email}>
+                    <input class="input_login" type="email" id="email" placeholder="john@doe.com" bind:value={email}>
+                    <a href="/#/inscription">Pas encore inscrit ?</a>
                 </div>
 
                 <div class="infos">          
                     <label for="password">Mot de passe :</label>
-                    <input class="input_logister_bis" type="password" id="password" placeholder="**********" bind:value={password}>
-                    <a href="/#/inscription">Pas encore inscrit ?</a>
+                    <input class="input_login" type="password" id="password" placeholder="**********" bind:value={password}>
                 </div>
             
                 <div class="divsubmitbtn">
@@ -118,13 +113,15 @@ const nav = [
 <style lang="scss">
 
     a {
-      text-decoration: none;
-      color: #0077cc;
+        margin-left: 100px;
+        font-size: 13px;
+        text-decoration: none;
+        color: #0077cc;
 
-        &:hover {
-            text-decoration: underline;
-            color: #004f88;
-        }
+            &:hover {
+                text-decoration: underline;
+                color: #004f88;
+            }
         
     }
 

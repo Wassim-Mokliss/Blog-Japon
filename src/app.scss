@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-.titleregister1 {
+.title_login {
     display: flex;
     justify-content: center;
     //align-items: center;
@@ -31,7 +31,7 @@
     margin-bottom: 50px;
 }
 
-.titleregister2 {
+.title_register {
     display: flex;
     justify-content: center;
     //align-items: center;
@@ -53,11 +53,9 @@
 }
 
 .infos {
-    width: 30vw;
     height: 10vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -71,22 +69,21 @@
 .btnsubmit {
     font-size: 20px;
     font-weight: bold;
-    width: 17vw;
-    height: 10vh;
+    height: 7vh;
     cursor: pointer;
 }
 
-.input_logister {
+.input_register {
     width: 210px;
     height: 50px;
 }
 
-.input_logister_bis {
+.input_login {
     width: 210px;
     height: 60px;
 }
 
-.display_logister {
+.display_login {
     display: flex;
     justify-content: center;
     align-items: center;
