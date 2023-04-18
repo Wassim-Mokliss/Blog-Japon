@@ -79,40 +79,50 @@ import { push } from "svelte-spa-router";
         return token;
     }
 
-  
-
-    
-    
-
-
 </script>
 
+<div class="logister">
 
-<h1>Connexion</h1>
+    <div class="allform">   
 
+        <form on:submit={handleSubmitForm} action="" method="post">
 
+            <h2 class="title_login">Connexion</h2>
+                
+                <div class="infos">
+                    <label for="email">Email :</label>
+                    <input class="input_login" type="email" id="email" placeholder="john@doe.com" bind:value={email}>
+                    <a href="/#/inscription">Pas encore inscrit ?</a>
+                </div>
 
-<form on:submit={handleSubmitForm} id="connexion-form" action="" method="post">
-    <label for="email">Nom d'utilisateur :</label>
-    <input type="email" id="email" bind:value={email}>
+                <div class="infos">          
+                    <label for="password">Mot de passe :</label>
+                    <input class="input_login" type="password" id="password" placeholder="**********" bind:value={password}>
+                </div>
+            
+                <div class="divsubmitbtn">
+                    <button class="btnsubmit" type="submit">Se connecter</button>
+                </div>
 
-    <label for="password">Mot de passe :</label>
-    <input type="password" id="password" bind:value={password}>
+        </form>
 
-    <button type="submit">Se connecter</button>
-  </form>
+    </div>
 
-  <style>
+</div>
 
-    form{
-        align-items: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
+<style lang="scss">
 
+    a {
+        margin-left: 100px;
+        font-size: 13px;
+        text-decoration: none;
+        color: #0077cc;
+
+            &:hover {
+                text-decoration: underline;
+                color: #004f88;
+            }
+        
     }
 
-
-
-
-  </style>
+</style>
