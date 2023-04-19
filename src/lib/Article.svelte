@@ -20,6 +20,7 @@
     <h2> {article.title}</h2>
     <p>{article.content}</p>
 </article>
+
 <style>
     article {
     border: 1px solid #ddd;
@@ -44,5 +45,3 @@ p {
 
 
 </style>
-
-  
