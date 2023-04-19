@@ -2,6 +2,7 @@
 
 <script>
     import axios from "axios"
+  import BtnArticle from "../composants/BtnArticle.svelte";
     let articles = [
     
     ]
@@ -14,6 +15,7 @@
         
     })
 </script>
+
 
 {#each articles as article}
 <article>

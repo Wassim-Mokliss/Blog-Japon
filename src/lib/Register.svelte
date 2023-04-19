@@ -90,17 +90,17 @@
         <h2 class="title_register">Inscription</h2>
 
                 <div class="infos">
-                    <label for="lastname">Nom :</label>
+                    <label class="title_field_register" for="lastname">Nom :</label>
                     <input class="input_register" required type="lastname" name="lastname" id="lastname" placeholder="Doe" bind:value={last_name}/>
                 </div>
 
                 <div class="infos">
-                    <label for="firstname">Prénom :</label>
+                    <label class="title_field_register" for="firstname">Prénom :</label>
                     <input class="input_register" required type="firstname" name="firstname" id="firstname" placeholder="John" bind:value={first_name}/>
                 </div>
 
                 <div class="infos">
-                    <label for="email">Email :</label>
+                    <label class="title_field_register" for="email">Email :</label>
                     <input class="input_register" required type="email" name="email" id="email" placeholder="johndoe@email.com" bind:value={email}/>
                     {#if error_boolean}
                         <h1 class="error_msg">Adresse email invalide</h1>
@@ -109,7 +109,7 @@
                 </div>
 
                 <div class="infos">
-                    <label for="password">Mot de passe :</label>
+                    <label class="title_field_register" for="password">Mot de passe :</label>
                     <input class="input_register" required type="password" name="password" id="password" placeholder="**********" bind:value={password}/>
                 </div>
 
