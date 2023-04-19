@@ -30,20 +30,20 @@ function handleOnSubmit(event){
     
 
     <div class="field_infos">
-        <label for="name">NOM</label>
+        <label class="title_contact" for="name">Nom :</label>
             <input class="input_infos" type="text" id="name" placeholder="Linda" bind:value={name}>
     </div>
     <div class="field_infos">
-        <label for = "lastname">PRENOM</label>
+        <label class="title_contact" for = "lastname">Prénom :</label>
             <input class="input_infos" type="text" id="lastname" placeholder="Wal" bind:value={lastname} >
     </div>
     <div class="field_infos">
-        <label for="email">EMAIL</label>
+        <label class="title_contact" for="email">Email :</label>
             <input class="input_infos" type="email" id="email" placeholder="linda@boite.com" bind:value={email}>
     </div>
     <div class="field_infos" >
-        <label for="message">MESSAGE </label>
-            <input class="input_infos" type="message" id="message" placeholder="****" bind:value={message}>
+        <label class="title_contact" for="message">Message :</label>
+            <input class="input_infos" type="message" id="message" placeholder="**********" bind:value={message}>
     </div>
     
     <div class="field_infos">
