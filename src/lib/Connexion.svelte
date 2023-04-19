@@ -90,13 +90,13 @@ import { push } from "svelte-spa-router";
             <h2 class="title_login">Connexion</h2>
                 
                 <div class="infos">
-                    <label for="email">Email :</label>
+                    <label class="title_field_login" for="email">Email :</label>
                     <input class="input_login" type="email" id="email" placeholder="john@doe.com" bind:value={email}>
                     <a href="/#/inscription">Pas encore inscrit ?</a>
                 </div>
 
                 <div class="infos">          
-                    <label for="password">Mot de passe :</label>
+                    <label class="title_field_login" for="password">Mot de passe :</label>
                     <input class="input_login" type="password" id="password" placeholder="**********" bind:value={password}>
                 </div>
             
