@@ -1,7 +1,8 @@
 <script>
     import axios from "axios";
     import { push } from "svelte-spa-router";
-  
+    import Button from "../composants/Button.svelte";
+ 
     let articles = [];
   
     // Récupère la liste des articles
@@ -16,7 +17,10 @@
     function afficherArticle(id) {
       push(`/article/${id}`);
     }
+
 </script>
+
+<Button/>
 
 {#each articles as article}
     <article>
@@ -27,6 +31,7 @@
       <p>{article.content.slice(0, 100)}...</p>
     </article>
 {/each}
+
 <style>
     article {
     border: 1px solid #ddd;
