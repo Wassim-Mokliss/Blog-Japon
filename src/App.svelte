@@ -41,8 +41,8 @@
 
 <style lang="scss">
 
-  main {
+  /*main {
     flex: 1,
-  }
+  }*/
 
 </style>

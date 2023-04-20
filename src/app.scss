@@ -2,13 +2,55 @@
 @use 'sass/contact';
 
 
+// User reset
+
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+// variables
+$header-height: 8em;
+$footer-height: 4em;
+$header-width: 100vw;
+$footer-width: 100vw;
+
+
+/* body {
+    height: 100vh;
+} */
+
+
+
 /* APP */
 
 #app{
     display: flex;
     flex-direction: column;
+    /*flex-wrap: nowrap;*/
     height: 100vh;
-    justify-content: center;
+    /*justify-content: center;*/
+    background-color: #e6e6e64d;
+}
+
+/* HEADER/FOOTER */
+header {
+   /* top: 0; left: 0; 
+    height: $header-height;*/
+    width: $header-width;
+}
+
+main {
+   /* z-index: -1;
+    min-height: 50em;
+    position: relative;
+    width: 100%;
+ float: left;*/
+    padding: 1em;
+    flex-grow: 1;
+    overflow: auto; 
+
 }
 
 /* CONNEXION/INSCRIPTION */
