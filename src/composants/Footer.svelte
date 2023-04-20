@@ -9,6 +9,7 @@
 
 </script>
 
+<footer>
    <nav class="navfooter"> 
         <ul class="navitem" id="footer" role="menu" aria-labelledby="toggle-menu">
             <!-- Utilisation d'une boucle pour créer la navigation dynamiquement -->
@@ -22,12 +23,14 @@
         <p class="copyright">All rights reserved - Jap&Co 2023</p>
 
     </nav>
-
+</footer>
      
     
 
 
 <style lang="scss">
+
+
     
     .navfooter {
         display: flex;
