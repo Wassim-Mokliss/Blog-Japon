@@ -52,5 +52,46 @@ Pour le coté Front-end voici ce que nous avons utilisé :
 - [Directus](https://docs.directus.io/getting-started/introduction.html) 
   
 
+## Si vous souhaitez reprendre notre repo les etapes à suivre sont les suivantes:
 
+**Instalation sur votre hote** 
+
+1. Vous devrai cloner notre [repo](https://github.com/O-clock-Olduvai/projet-blog) en suivant les screenshots :) 
+
+![img](src\assets\Screenshot.png)
+
+![img](src\assets/Screenshot2.png)
+
+2. 
+```bash
+git clone (collé ce que vous venez de copier)
+```
+
+3. Ouvrez ce repo sur votre editeur de texte.
+
+4. Une fois ouvert vous devrez installé les dependance du projet : 
+```bash
+npm i ou npm install
+```
+5. Vous aurrez plus qu'à lancer l'application avec la commande :
+```bash
+npm run dev
+```
+La base de données est incluse dans le dossier directus, il n'y a rien à installer.
+
+**Pour lancer Directus**
+
+1. Grace à la commande deplacer vous sur le dossier directus:
+```bash
+cd directus-japnco
+```
+2. Ensuite pour installer et demarrer Directus : 
+```bash
+npx directus start
+```
+ ⚠️ Cette commande fonctionne seulement si Directus a déjà été installer au moins 1 fois sur ça machine, sinon ça sera la commande suivante : 
+```bash
+npm install
+```
+1. Une fois tout installer, pensez a crée un fichier `.env` depuis l'`.env.example`, par la suite contacter un des membres de l'équipe pour obtenir les codes.
 
