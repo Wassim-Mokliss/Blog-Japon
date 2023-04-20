@@ -31,9 +31,9 @@
 
 .container {
     text-align: center;
-    width: auto;
-    font-size: 40px;
+    font-size: 16px;
     line-height: 1.5;
+    max-width: 800px;
 }
 
 .Title {
@@ -42,12 +42,14 @@
     text-decoration: underline;
     margin-bottom: 30px;
     margin-top: 80px;
+    font-size: 24px;
 
 }
 
 .actuality {
-    font-size: 50px;
-    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
