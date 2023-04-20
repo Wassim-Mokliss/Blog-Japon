@@ -7,14 +7,18 @@
 
 
 <div aria-hidden="true" class="bandeau">
-    <img src="./src/assets/banniere.svg" alt="bannière header">    
+    <img src="./src/assets/banniere.jpg" alt="bannière header">    
 </div>
 
 <style lang="scss">
-    img { 
-   height: 103vh;
-   background-size: contain;
-   width:100%;
+  .bandeau{
+    display: flex;
+    justify-content: center;
+  }
+    img {
+    height: 300px;
+    width: 40%;
+    margin-top: 125px;
   } 
 </style>
 
