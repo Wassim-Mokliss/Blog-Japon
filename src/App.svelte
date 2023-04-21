@@ -6,19 +6,21 @@
       import Contact from "./lib/Contact.svelte";      
       import Header from "./composants/Header.svelte";
       import Footer from "./composants/Footer.svelte";
-      import Logister from "./lib/Logister.svelte";
       import Connexion from "./lib/Connexion.svelte";
       import A_propos from "./lib/A_propos.svelte";
       import Erreur from "./composants/Erreur.svelte";
       import CreateArticle from "./lib/CreateArticle.svelte";
+      import Register from "./lib/Register.svelte";
+
       const routes = {
       '/': Home,
       '/articles': Articles,
       '/article/:id': Article,
       '/create-article': CreateArticle,
-      '/connexion' : Logister,
+      '/connexion' : Connexion,
+      '/inscription': Register,
       '/contact' : Contact,
-      '/login': Connexion,
+      
       '/a-propos' : A_propos,
       '*': Erreur
 
@@ -37,3 +39,10 @@
 </main>
 <Footer/>
 
+<style lang="scss">
+
+  main {
+    flex: 1,
+  }
+
+</style>

@@ -22,6 +22,8 @@
 
 <Button/>
 
+<Button/>
+
 {#each articles as article}
   <article>
     <!-- Utilise un bouton pour rendre le titre interactif et accessible -->
@@ -32,6 +34,7 @@
     <p>{article.content.slice(0, 100)}...</p>
   </article>
 {/each}
+
 
 <style>
   article {
@@ -73,3 +76,4 @@ article:hover {
 }
 
 </style>
+
