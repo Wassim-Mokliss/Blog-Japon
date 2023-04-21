@@ -22,7 +22,6 @@
 
 <Button/>
 
-<Button/>
 
 {#each articles as article}
   <article>
