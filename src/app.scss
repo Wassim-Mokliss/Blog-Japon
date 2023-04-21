@@ -2,8 +2,16 @@
 @use 'sass/contact';
 
 
+/* APP */
 
-/* REGISTER */
+#app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* CONNEXION/INSCRIPTION */
 
 .logister {
     display: flex;
@@ -11,7 +19,7 @@
     align-items: center;
 }
 
-.titleregister1 {
+.title_login {
     display: flex;
     justify-content: center;
     //align-items: center;
@@ -20,10 +28,11 @@
     //width: 100%;
     //height: 70px;
     //padding: 10px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
+    color: white;
 }
 
-.titleregister2 {
+.title_register {
     display: flex;
     justify-content: center;
     //align-items: center;
@@ -32,6 +41,7 @@
     //width: 100%;
     //height: 70px;
     margin-bottom: 3vh;
+    color: white;
 }
 
 .allform {
@@ -41,14 +51,14 @@
     align-items: center;
     margin: 20px auto;
     padding: 30px;
+    border: 2px solid black;
+    background-color: black;
 }
 
 .infos {
-    width: 30vw;
     height: 10vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -62,23 +72,30 @@
 .btnsubmit {
     font-size: 20px;
     font-weight: bold;
-    width: 17vw;
-    height: 10vh;
+    height: 7vh;
     cursor: pointer;
+    background-color:#fc2e2e ;
+    color: #ffb6c1;
+    border: none;
+    border-radius: 12px;
 }
 
-.input_logister {
+.btnsubmit:hover {
+    background-color: #ffb6c1;
+    color: #fc2e2e;
+}
+
+.input_register {
     width: 210px;
     height: 50px;
 }
 
-.input_logister_bis {
+.input_login {
     width: 210px;
     height: 60px;
-    margin-bottom: 130px;
 }
 
-.display_logister {
+.display_login {
     display: flex;
     justify-content: center;
     align-items: center;
